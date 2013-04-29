@@ -30,5 +30,5 @@ require(['app', 'jquery', 'trello', 'ko', 'bootstrap'], function (app, $, Trello
     console.log('ko: %s', ko);
 
     ko.applyBindings(app);
-    app.passiveLogin();
+    app.auth.passiveLogin();
 });

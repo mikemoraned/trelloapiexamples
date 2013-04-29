@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <form class="form-actions">
+                    <form class="form-actions" data-bind="with: auth">
                         <button class="btn btn-large" data-bind="click: login.do, enable: login.can">Log in</button>
                         <button class="btn btn-large" data-bind="click: logout.do, enable: logout.can">Log out</button>
                         <input class="input-xlarge uneditable-input" data-bind="value: status" />
