@@ -26,7 +26,7 @@ require(['app', 'jquery', 'trello', 'ko', 'bootstrap'], function (app, $, Trello
     // use app here
     console.log(app);
     console.log('Running jQuery %s', $().jquery);
-    console.log('Trello: %s', Trello);
+    console.log('Trello: %s', Trello.version());
     console.log('ko: %s', ko);
 
     ko.applyBindings(app);
