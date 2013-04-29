@@ -11,6 +11,9 @@ require.config({
             deps: ['jquery'],
             exports: 'jquery'
         },
+        'jquery-migrate' : {
+            deps: ['jquery']
+        },
         trello: {
             deps: ['jquery', 'jquery-migrate'],
             exports: 'Trello'
@@ -27,4 +30,5 @@ require(['app', 'jquery', 'trello', 'ko', 'bootstrap'], function (app, $, Trello
     console.log('ko: %s', ko);
 
     ko.applyBindings(app);
+    app.passiveLogin();
 });

@@ -12,12 +12,31 @@ define(['ko', 'trello'], function (ko, Trello) {
 
         "status": status,
 
+        "passiveLogin" : function() {
+            Trello.authorize({
+                interactive: false,
+                success: function() {
+                    status(LOGGED_IN);
+                },
+                error: function() {
+                    status(LOGGED_OUT);
+                }
+            });
+        },
+
         "login" : {
             "do" : function() {
                 console.log("Log in");
                 status(LOGGING_IN);
-
-                status(LOGGED_IN);
+                Trello.authorize({
+                    name: "Basic login",
+                    success: function() {
+                        status(LOGGED_IN);
+                    },
+                    error: function() {
+                        status(LOGGED_OUT);
+                    }
+                });
             },
 
             "can" : ko.computed(function() {
@@ -28,6 +47,7 @@ define(['ko', 'trello'], function (ko, Trello) {
         "logout" : {
             "do" : function() {
                 console.log("Log out");
+                Trello.deauthorize();
                 status(LOGGED_OUT);
             },
 
