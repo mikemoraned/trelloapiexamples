@@ -19,14 +19,19 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <form class="form-actions" data-bind="with: auth">
-                        <label class="checkbox">
-                            <select data-bind="options: login.opts.types, value: login.opts.type"></select>
-                            Type?
+                    <form class="form-horizontal well" data-bind="with: auth">
+                        <label class="select">
+                            Type
+                            <select data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
                         </label>
-                        <button class="btn btn-large" data-bind="click: login.do, enable: login.can">Log in</button>
-                        <button class="btn btn-large" data-bind="click: logout.do, enable: logout.can">Log out</button>
-                        <input class="input-xlarge uneditable-input" data-bind="value: status" />
+                        <label class="select">
+                            Scope
+                            <select data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
+                        </label>
+                        <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
+
+                        <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
+                        <input class="input uneditable-input" data-bind="value: status" />
                     </form>
                 </div>
             </div>

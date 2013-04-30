@@ -10,7 +10,23 @@ define(['ko', 'trello'], function (ko, Trello) {
 
     var opts = {
         types: ko.observableArray(['redirect','popup']),
-        'type': ko.observableArray()
+        'type': ko.observable(),
+        scopes: ko.observableArray(
+            [
+                {
+                    name: 'read-only',
+                    value: { read: true, write: false, account: false }
+                },
+                {
+                    name: 'write',
+                    value: { read: true, write: true, account: false }
+                },
+                {
+                    name: 'full',
+                    value: { read: true, write: true, account: true }
+                }
+            ]),
+        scope: ko.observable()
     };
 
     return {
@@ -36,6 +52,7 @@ define(['ko', 'trello'], function (ko, Trello) {
                 Trello.authorize({
                     name: "Basic login",
                     'type': opts.type(),
+                    scope: opts.scope().value,
                     success: function() {
                         status(LOGGED_IN);
                     },
