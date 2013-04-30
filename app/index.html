@@ -20,6 +20,10 @@
             <div class="row">
                 <div class="span12">
                     <form class="form-actions" data-bind="with: auth">
+                        <label class="checkbox">
+                            <select data-bind="options: login.opts.types, value: login.opts.type"></select>
+                            Type?
+                        </label>
                         <button class="btn btn-large" data-bind="click: login.do, enable: login.can">Log in</button>
                         <button class="btn btn-large" data-bind="click: logout.do, enable: logout.can">Log out</button>
                         <input class="input-xlarge uneditable-input" data-bind="value: status" />

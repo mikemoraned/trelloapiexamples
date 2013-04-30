@@ -8,6 +8,11 @@ define(['ko', 'trello'], function (ko, Trello) {
 
     var status = ko.observable(LOGGED_OUT);
 
+    var opts = {
+        types: ko.observableArray(['redirect','popup']),
+        'type': ko.observableArray()
+    };
+
     return {
 
         "status": status,
@@ -30,6 +35,7 @@ define(['ko', 'trello'], function (ko, Trello) {
                 status(LOGGING_IN);
                 Trello.authorize({
                     name: "Basic login",
+                    'type': opts.type(),
                     success: function() {
                         status(LOGGED_IN);
                     },
@@ -38,6 +44,8 @@ define(['ko', 'trello'], function (ko, Trello) {
                     }
                 });
             },
+
+            opts: opts,
 
             "can" : ko.computed(function() {
                 return status() === LOGGED_OUT;
