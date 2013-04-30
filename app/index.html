@@ -20,18 +20,30 @@
             <div class="row">
                 <div class="span12">
                     <form class="form-horizontal well" data-bind="with: auth">
-                        <label class="select">
-                            Type
-                            <select data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
-                        </label>
-                        <label class="select">
-                            Scope
-                            <select data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
-                        </label>
-                        <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
-
-                        <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
-                        <input class="input uneditable-input" data-bind="value: status" />
+                        <div class="control-group">
+                            <label class="control-label" for="status">Status</label>
+                            <div class="controls">
+                                <input id="status" class="input uneditable-input" data-bind="value: status" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="type">Type</label>
+                            <div class="controls">
+                                <select id="type" data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="scope">Scope</label>
+                            <div class="controls">
+                                <select id="scope" data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
+                                <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
