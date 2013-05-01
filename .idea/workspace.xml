@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="trelloapiexamples.iws" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="42" selection-start="3400" selection-end="3400" vertical-scroll-proportion="0.93655586">
+            <state line="139" column="476" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.69486403">
               <folding />
             </state>
           </provider>
@@ -438,7 +437,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="42" selection-start="3400" selection-end="3400" vertical-scroll-proportion="0.93655586">
+        <state line="139" column="476" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.69486403">
           <folding />
         </state>
       </provider>
