@@ -16,45 +16,128 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <form class="form-horizontal well" data-bind="with: auth">
-                        <div class="control-group">
-                            <label class="control-label" for="status">Status</label>
-                            <div class="controls">
-                                <input id="status" class="input uneditable-input" data-bind="value: status" />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="type">Type</label>
-                            <div class="controls">
-                                <select id="type" data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="scope">Scope</label>
-                            <div class="controls">
-                                <select id="scope" data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
-                                <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
-                            </div>
-                        </div>
-                    </form>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">Trello Api Examples</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="span12">
-                    <h2>Watch out for</h2>
+        </div>
+        <div class="container">
+            <div>
+                <div id="login">
+                    <div class="page-header">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="row example">
+                        <div class="span12">
+                            <form class="form-horizontal" data-bind="with: auth">
+                                <div class="control-group">
+                                    <label class="control-label" for="status">Status</label>
+                                    <div class="controls">
+                                        <input id="status" class="input uneditable-input" data-bind="value: status" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="type">Type</label>
+                                    <div class="controls">
+                                        <select id="type" data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="scope">Scope</label>
+                                    <div class="controls">
+                                        <select id="scope" data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
+                                        <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
 
-                    <ul>
-                        <li>redirects are a pain because you lose app state, however pop-ups are hard to support across browsers</li>
-                        <li>for pop-ups success handler seems to get called too soon</li>
-                    </ul>
+                            <ul>
+                                <li>redirects are a pain because you lose app state, however pop-ups are hard to support across browsers</li>
+                                <li>for pop-ups success handler seems to get called too soon</li>
+                            </ul>
+
+                            <ul class="pager">
+                                <li class="next">
+                                    <a href="#boards">Next &rarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="boards">
+                    <div class="page-header">
+                        <h1>Boards</h1>
+                    </div>
+                    <div class="row example">
+                        <div class="span12">
+                            Example
+                        </div>
+                    </div>
+                    <div class="row watchout">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="actions">
+                    <div class="page-header">
+                        <h1>Actions</h1>
+                    </div>
+
+                    <div class="row example">
+                        <div class="span12">
+
+                        </div>
+                    </div>
+                    <div class="row watchout">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="cards">
+                    <div class="page-header">
+                        <h1>Cards</h1>
+                    </div>
+
+                    <div class="row example">
+                        <div class="span12">
+
+                        </div>
+                    </div>
+                    <div class="row watchout">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
