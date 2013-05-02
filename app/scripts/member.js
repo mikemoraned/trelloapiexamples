@@ -4,6 +4,7 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
 
     function Board(data) {
         this.name = ko.observable(data.name);
+        this.members = ko.observable(data.memberships.length);
     }
 
     var Member = function(auth, errors) {
@@ -29,7 +30,14 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
                 })
             },
 
-            boards: boards
+            boards: ko.computed(function() {
+                if (boards().length > 4) {
+                    return boards().slice(0, 4);
+                }
+                else {
+                    return boards();
+                }
+            })
         };
     };
 

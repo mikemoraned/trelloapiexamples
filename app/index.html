@@ -85,15 +85,17 @@
                         <div class="span12">
                             <form class="form-horizontal" data-bind="with: member">
                                 <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
-                                <table class="table" data-bind="visible: boards().length > 0">
+                                <table class="table" data-bind="visible: boards().length > 0" style="height: 100px; overflow: scroll;">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
+                                            <th>Num members</th>
                                         </tr>
                                     </thead>
                                     <tbody data-bind="foreach: boards">
                                         <tr>
                                             <td data-bind="text: name"></td>
+                                            <td data-bind="text: members"></td>
                                         </tr>
                                     </tbody>
                                 </table>
