@@ -82,10 +82,10 @@
                         <h1>Members Boards</h1>
                     </div>
                     <div class="row example">
-                        <div class="span12">
+                        <div class="span6">
                             <form class="form-horizontal" data-bind="with: member">
                                 <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
-                                <table class="table" data-bind="visible: boards().length > 0" style="height: 100px; overflow: scroll;">
+                                <table class="table" data-bind="visible: boards().length > 0">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -97,6 +97,23 @@
                                             <td data-bind="text: name"></td>
                                             <td data-bind="text: members"></td>
                                         </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="span6">
+                            <form class="form-horizontal" data-bind="with: member">
+                                <button class="btn" data-bind="click: fetchActions.do, enable: fetchActions.can">Fetch Actions</button>
+                                <table class="table" data-bind="visible: actions().length > 0">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: actions">
+                                    <tr>
+                                        <td data-bind="text: name"></td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </form>

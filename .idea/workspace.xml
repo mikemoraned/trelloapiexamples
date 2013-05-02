@@ -37,7 +37,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="72" selection-start="5252" selection-end="5252" vertical-scroll-proportion="-20.625">
+            <state line="112" column="70" selection-start="6073" selection-end="6073" vertical-scroll-proportion="-30.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +75,7 @@
       <file leaf-file-name="member.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/member.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="235" selection-end="235" vertical-scroll-proportion="0.08737864">
+            <state line="70" column="54" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.8300971">
               <folding />
             </state>
           </provider>
@@ -496,14 +496,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="72" selection-start="5252" selection-end="5252" vertical-scroll-proportion="-20.625">
+        <state line="112" column="70" selection-start="6073" selection-end="6073" vertical-scroll-proportion="-30.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/member.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="53" selection-start="235" selection-end="235" vertical-scroll-proportion="0.08737864">
+        <state line="70" column="54" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.8300971">
           <folding />
         </state>
       </provider>
