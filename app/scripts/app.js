@@ -1,10 +1,13 @@
 /*global define */
-define(['auth'], function (Auth) {
+define(['auth','errors','member'], function (Auth, Errors, Member) {
     'use strict';
 
-    var auth = new Auth();
+    var errors = new Errors();
+    var auth = new Auth(errors);
+    var member = new Member(auth, errors);
 
     return {
-        "auth": auth
+        "auth": auth,
+        "member" : member
     };
 });

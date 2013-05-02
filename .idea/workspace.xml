@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/errors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/member.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/statuses.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
@@ -30,7 +33,7 @@
       <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -39,7 +42,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="69" selection-start="4399" selection-end="4399" vertical-scroll-proportion="-24.375">
+            <state line="87" column="81" selection-start="4628" selection-end="4628" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errors.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="17" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,19 +60,28 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="5" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="16" selection-start="2468" selection-end="2468" vertical-scroll-proportion="1.2524272">
+            <state line="25" column="10" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="member.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/member.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="31" selection-start="644" selection-end="644" vertical-scroll-proportion="0.26213592">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,9 +119,13 @@
       <list>
         <option value="$PROJECT_DIR$/component.json" />
         <option value="$PROJECT_DIR$/app/scripts/main.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/statuses.js" />
+        <option value="$PROJECT_DIR$/app/scripts/status.js" />
+        <option value="$PROJECT_DIR$/app/scripts/error.js" />
         <option value="$PROJECT_DIR$/app/scripts/auth.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/member.js" />
       </list>
     </option>
   </component>
@@ -296,6 +321,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -437,24 +469,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="69" selection-start="4399" selection-end="4399" vertical-scroll-proportion="-24.375">
+        <state line="87" column="81" selection-start="4628" selection-end="4628" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+        <state line="5" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/statuses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="16" selection-start="2468" selection-end="2468" vertical-scroll-proportion="1.2524272">
+        <state line="25" column="10" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/member.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="644" selection-end="644" vertical-scroll-proportion="0.26213592">
+          <folding />
         </state>
       </provider>
     </entry>
