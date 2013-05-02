@@ -29,30 +29,14 @@ define(['ko', 'trello'], function (ko, Trello) {
         scope: ko.observable()
     };
 
-    return {
+    var Auth = function() {
+        return {
 
-        "status": status,
+            "status": status,
 
-        "passiveLogin" : function() {
-            Trello.authorize({
-                interactive: false,
-                success: function() {
-                    status(LOGGED_IN);
-                },
-                error: function() {
-                    status(LOGGED_OUT);
-                }
-            });
-        },
-
-        "login" : {
-            "do" : function() {
-                console.log("Log in");
-                status(LOGGING_IN);
+            "passiveLogin" : function() {
                 Trello.authorize({
-                    name: "Basic login",
-                    'type': opts.type(),
-                    scope: opts.scope().value,
+                    interactive: false,
                     success: function() {
                         status(LOGGED_IN);
                     },
@@ -62,23 +46,43 @@ define(['ko', 'trello'], function (ko, Trello) {
                 });
             },
 
-            opts: opts,
+            "login" : {
+                "do" : function() {
+                    console.log("Log in");
+                    status(LOGGING_IN);
+                    Trello.authorize({
+                        name: "Basic login",
+                        'type': opts.type(),
+                        scope: opts.scope().value,
+                        success: function() {
+                            status(LOGGED_IN);
+                        },
+                        error: function() {
+                            status(LOGGED_OUT);
+                        }
+                    });
+                },
 
-            "can" : ko.computed(function() {
-                return status() === LOGGED_OUT;
-            })
-        },
+                opts: opts,
 
-        "logout" : {
-            "do" : function() {
-                console.log("Log out");
-                Trello.deauthorize();
-                status(LOGGED_OUT);
+                "can" : ko.computed(function() {
+                    return status() === LOGGED_OUT;
+                })
             },
 
-            "can" : ko.computed(function() {
-                return status() === LOGGED_IN;
-            })
-        }
+            "logout" : {
+                "do" : function() {
+                    console.log("Log out");
+                    Trello.deauthorize();
+                    status(LOGGED_OUT);
+                },
+
+                "can" : ko.computed(function() {
+                    return status() === LOGGED_IN;
+                })
+            }
+        };
     };
+
+    return Auth;
 });

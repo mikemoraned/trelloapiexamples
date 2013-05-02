@@ -1,6 +1,8 @@
 /*global define */
-define(['auth'], function (auth) {
+define(['auth'], function (Auth) {
     'use strict';
+
+    var auth = new Auth();
 
     return {
         "auth": auth
