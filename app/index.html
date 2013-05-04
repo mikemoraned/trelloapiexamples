@@ -19,7 +19,11 @@
         <div class="navbar navbar-static-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="#">Trello Api Examples</a>
+                    <a class="brand" href="#">Trello Api</a>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Login/Read/Write</a></li>
+                        <li><a href="bigger.html">Bigger example</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -70,16 +74,16 @@
 
                             <ul class="pager">
                                 <li class="next">
-                                    <a href="#member">Next &rarr;</a>
+                                    <a href="#read">Next &rarr;</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div id="member">
+                <div id="read">
                     <div class="page-header">
-                        <h1>Members Boards</h1>
+                        <h1>Read</h1>
                     </div>
                     <div class="row example">
                         <div class="span6">
@@ -130,47 +134,32 @@
 
                             <ul class="pager">
                                 <li class="next">
-                                    <a href="#actions">Next &rarr;</a>
+                                    <a href="#write">Next &rarr;</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div id="actions">
+                <div id="write">
                     <div class="page-header">
-                        <h1>Actions</h1>
+                        <h1>Write</h1>
                     </div>
 
                     <div class="row example">
                         <div class="span12">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </div>
-                    </div>
-                    <div class="row watchout">
-                        <div class="span12">
-                            <h3>Watch out for</h3>
-
-                            <ul>
-                                <li></li>
-                                <li></li>
-                            </ul>
-
-                            <ul class="pager">
-                                <li class="next">
-                                    <a href="#cards">Next &rarr;</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="cards">
-                    <div class="page-header">
-                        <h1>Cards</h1>
-                    </div>
-
-                    <div class="row example">
-                        <div class="span12">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            <form class="form-horizontal" data-bind="with: write">
+                                <div class="control-group">
+                                    <label class="control-label" for="type">Board</label>
+                                    <div class="controls">
+                                        <select id="board" data-bind="options: boards, value: selectedBoard"></select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="row watchout">
@@ -184,6 +173,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

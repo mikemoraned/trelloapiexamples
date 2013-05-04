@@ -1,35 +1,28 @@
 /*global define */
-define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
+define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SCOPES) {
     'use strict';
 
     var Auth = function(errors) {
 
         var opts = {
             types: ko.observableArray(['redirect','popup']),
-            'type': ko.observable(),
+            'type': ko.observable(null),
             scopes: ko.observableArray(
                 [
-                    {
-                        name: 'read-only',
-                        value: { read: true, write: false, account: false }
-                    },
-                    {
-                        name: 'write',
-                        value: { read: true, write: true, account: false }
-                    },
-                    {
-                        name: 'full',
-                        value: { read: true, write: true, account: true }
-                    }
+                    SCOPES.READ_ONLY, SCOPES.WRITE, SCOPES.FULL
                 ]),
-            scope: ko.observable()
+            scope: ko.observable(null)
         };
 
         var status = ko.observable(STATUSES.LOGGED_OUT);
 
+        var achievedScope = ko.observable(null);
+
         return {
 
             "status": status,
+
+            "achieved": achievedScope,
 
             "passiveLogin" : function() {
                 Trello.authorize({
@@ -48,15 +41,18 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
                 "do" : function() {
                     console.log("Log in");
                     status(STATUSES.LOGGING_IN);
+                    var wantedScope = opts.scope();
                     Trello.authorize({
                         name: "Basic login",
                         'type': opts.type(),
-                        scope: opts.scope().value,
+                        scope: wantedScope.value,
                         success: function() {
                             status(STATUSES.LOGGED_IN);
+                            achievedScope(wantedScope);
                         },
                         error: function() {
                             status(STATUSES.LOGGED_OUT);
+                            achievedScope(null);
                         }
                     });
                 },
@@ -73,6 +69,7 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
                     console.log("Log out");
                     Trello.deauthorize();
                     status(STATUSES.LOGGED_OUT);
+                    achievedScope(null);
                 },
 
                 "can" : ko.computed(function() {
