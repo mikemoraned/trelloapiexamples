@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/example.html" afterPath="$PROJECT_DIR$/app/example.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/voting.js" afterPath="$PROJECT_DIR$/app/scripts/voting.js" />
     </list>
     <ignored path="trelloapiexamples.iws" />
@@ -75,7 +72,7 @@
       <file leaf-file-name="voting.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="63" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.4368932">
+            <state line="39" column="49" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.56796116">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -146,8 +143,8 @@
         <option value="$PROJECT_DIR$/app/scripts/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/errors.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/voting.js" />
         <option value="$PROJECT_DIR$/app/example.html" />
+        <option value="$PROJECT_DIR$/app/scripts/voting.js" />
       </list>
     </option>
   </component>
@@ -547,7 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="63" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.4368932">
+        <state line="39" column="49" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.56796116">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

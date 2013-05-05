@@ -34,7 +34,16 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
 
             boardId: boardId,
 
-            cards: cards
+            cards: ko.computed(function() {
+                if (cards()) {
+                    return cards().slice(0).sort(function(c1, c2) {
+                        return c2.numVotes() - c1.numVotes();
+                    });
+                }
+                else {
+                    cards();
+                }
+            })
         };
     };
 
