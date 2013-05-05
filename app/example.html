@@ -98,8 +98,17 @@
                                     </div>
                                 </div>
                                 <div data-bind="with: voting">
-                                    <input class="input" data-bind="value: boardId, valueUpdate: 'afterkeydown'" />
-                                    <button class="btn" data-bind="click: findVotes.do, enable: findVotes.can">Find votes</button>
+                                    <div class="control-group">
+                                        <label class="control-label" for="boardId">Board id</label>
+                                        <div class="controls">
+                                            <input id="boardId" class="input" data-bind="value: boardId, valueUpdate: 'afterkeydown'" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button class="btn" data-bind="click: findVotes.do, enable: findVotes.can">Find votes</button>
+                                        </div>
+                                    </div>
                                     <table class="table" data-bind="visible: cards().length > 0">
                                         <thead>
                                         <tr>

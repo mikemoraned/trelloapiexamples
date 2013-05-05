@@ -28,7 +28,7 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
                 },
 
                 "can" : ko.computed(function() {
-                    return boardId() && auth.status() === STATUSES.LOGGED_IN;
+                    return boardId() && boardId().length === 24 && auth.status() === STATUSES.LOGGED_IN;
                 })
             },
 
