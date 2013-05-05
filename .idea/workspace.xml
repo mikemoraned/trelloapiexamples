@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/errors.js" afterPath="$PROJECT_DIR$/app/scripts/errors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/member.js" afterPath="$PROJECT_DIR$/app/scripts/member.js" />
     </list>
     <ignored path="trelloapiexamples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="140" selection-start="9476" selection-end="9476" vertical-scroll-proportion="0.5287009">
+            <state line="154" column="140" selection-start="7827" selection-end="7927" vertical-scroll-proportion="-19.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigger.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bigger.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bigger.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-14.375">
+            <state line="23" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.34743202">
               <folding />
             </state>
           </provider>
@@ -47,7 +48,7 @@
       <file leaf-file-name="errors.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+            <state line="12" column="42" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+            <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,9 +67,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,9 +76,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/statuses.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,9 +85,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/scopes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="6" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,11 +137,11 @@
         <option value="$PROJECT_DIR$/app/scripts/error.js" />
         <option value="$PROJECT_DIR$/app/scripts/scopes.js" />
         <option value="$PROJECT_DIR$/app/scripts/auth.js" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/bigger.html" />
         <option value="$PROJECT_DIR$/app/scripts/write.js" />
-        <option value="$PROJECT_DIR$/app/scripts/errors.js" />
         <option value="$PROJECT_DIR$/app/scripts/member.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/errors.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
@@ -323,8 +318,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -346,7 +341,7 @@
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -473,14 +468,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="46" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="46" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component.json">
+    <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -488,54 +481,13 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/statuses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/scopes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="6" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bigger.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/write.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -547,9 +499,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/write.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="140" selection-start="9476" selection-end="9476" vertical-scroll-proportion="0.5287009">
+        <state line="154" column="140" selection-start="7827" selection-end="7927" vertical-scroll-proportion="-19.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bigger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.34743202">
           <folding />
         </state>
       </provider>

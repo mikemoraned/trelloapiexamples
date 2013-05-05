@@ -10,6 +10,7 @@ define(['auth','errors','member','write'], function (Auth, Errors, Member, Write
     return {
         "auth"   : auth,
         "member" : member,
-        "write"  : write
+        "write"  : write,
+        "errors" : errors
     };
 });
