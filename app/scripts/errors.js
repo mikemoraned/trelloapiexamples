@@ -6,7 +6,7 @@ define([], function () {
 
         return {
             "onError" : function(error) {
-                console.log();
+                console.log(error);
             }
         };
     };

@@ -9,9 +9,10 @@ define(['ko', 'trello', 'statuses'], function (ko, Trello, STATUSES) {
 
     function Action(data) {
         this.name = ko.observable(data.type);
+        this.date = ko.observable(data.date);
     }
 
-    var MAX_ROWS = 8;
+    var MAX_ROWS = 20;
 
     var Member = function(auth, errors) {
         var boards = ko.observableArray();

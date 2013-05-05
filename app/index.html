@@ -112,11 +112,13 @@
                                     <thead>
                                     <tr>
                                         <th>Name</th>
+                                        <th>When</th>
                                     </tr>
                                     </thead>
                                     <tbody data-bind="foreach: actions">
                                     <tr>
                                         <td data-bind="text: name"></td>
+                                        <td data-bind="text: date"></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -170,7 +172,7 @@
                                         <div class="control-group">
                                             <label class="control-label" for="w-card-name">Card name</label>
                                             <div class="controls">
-                                                <input id="w-card-name" class="input" data-bind="value: cardName" />
+                                                <input id="w-card-name" class="input" data-bind="value: cardName, valueUpdate: 'afterkeydown'" />
                                             </div>
                                         </div>
                                         <div class="control-group">
