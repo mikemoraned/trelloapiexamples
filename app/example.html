@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">Trello Api</a>
+                    <ul class="nav">
+                        <li><a href="/">Login/Read/Write</a></li>
+                        <li class="active"><a href="example.html">Worked example</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div>
+                    <div class="page-header">
+                        <h2>The idea: show votes on a board as a graph</h2>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <p>
+                                We recently added a new board which contains lists of possible optimisations we could add to our project.
+                                I'd like to be able to view these by order of votes i.e. highest votes first
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="page-header">
+                        <h2>Play with what's available via the console</h2>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <p>
+                                First I would look at the API pages to see where "vote" or "voting" appears.
+
+                                https://trello.com/docs/api/index.html
+
+                                There are a few mentions, but the initial problems are:
+
+                                * choosing a board that the votes are on (though this could be hard-coded)
+                                * find all the votes
+                                * displaying them in some way
+
+                                Let's assume we will go with a configurable board-id, but you have to put it in manually.
+                                So, how do we find all the votes?
+
+                                BOARDID = the hash which appears in the boards URL.
+
+                                We could trawl over all the cards in the board via "boards/BOARDID/cards", and see if we can check which of them had votes.
+                                If there were a *lot* of cards then trawling through them all might take a while, but there typically aren't very many cards on a board.
+                                Typically, we can also reduce the amount of information, so we'll try that here.
+
+                                If we do "Trello.boards.get("BOARDID/cards")" in the console, then we can see what shows for our board. It looks like "idMembersVoted" is what we want,
+                                and the boards/BOARDID/cards contains that, so let's choose that.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="page-header">
+                        <h2>Hack together a prototype</h2>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <form class="form-horizontal">
+                                <div data-bind="with: auth">
+                                    <div class="control-group">
+                                        <label class="control-label" for="status">Status</label>
+                                        <div class="controls">
+                                            <input id="status" class="input uneditable-input" data-bind="value: status" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
+                                            <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-bind="with: voting">
+                                    <input class="input" data-bind="value: boardId, valueUpdate: 'afterkeydown'" />
+                                    <button class="btn" data-bind="click: findVotes.do, enable: findVotes.can">Find votes</button>
+                                    <table class="table" data-bind="visible: cards().length > 0">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Num votes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody data-bind="foreach: cards">
+                                        <tr>
+                                            <td data-bind="text: name"></td>
+                                            <td data-bind="text: numVotes"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/example-main" src="components/requirejs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

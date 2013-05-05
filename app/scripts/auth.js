@@ -11,7 +11,7 @@ define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SC
                 [
                     SCOPES.READ_ONLY, SCOPES.WRITE, SCOPES.FULL
                 ]),
-            scope: ko.observable(null)
+            scope: ko.observable(SCOPES.READ_ONLY)
         };
 
         var status = ko.observable(STATUSES.LOGGED_OUT);

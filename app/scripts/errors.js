@@ -10,9 +10,11 @@ define(['ko'], function (ko) {
             "messages" : messages,
 
             "onError" : function(error) {
-                var message = error.status + ": " + error.responseText;
-                console.log(message);
-                messages.push(message);
+                if (error) {
+                    var message = error.status + ": " + error.responseText;
+                    console.log(message);
+                    messages.push(message);
+                }
             }
         };
     };
