@@ -149,14 +149,29 @@
                         <div class="span12">
                             <form class="form-horizontal" data-bind="with: write">
                                 <div class="control-group">
-                                    <label class="control-label" for="type">Board</label>
                                     <div class="controls">
-                                        <select id="board" data-bind="options: boards, value: selectedBoard"></select>
+                                        <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
                                     </div>
                                 </div>
                                 <div class="control-group">
+                                    <label class="control-label" for="w-board">Board</label>
                                     <div class="controls">
-                                        <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
+                                        <select id="w-board" data-bind="options: boards, optionsText: 'name', value: selectedBoard"></select>
+                                    </div>
+                                </div>
+                                <div data-bind="with: selectedBoard, visible: selectedBoard">
+                                    <div class="control-group">
+                                        <label class="control-label" for="w-list">List</label>
+                                        <div class="controls">
+                                            <select id="w-list" data-bind="options: lists, optionsText: 'name', value: selectedList"></select>
+                                        </div>
+                                    </div>
+                                    <div data-bind="with: selectedList, visible: selectedList">
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
