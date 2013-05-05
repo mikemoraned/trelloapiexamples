@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/voting.js" afterPath="$PROJECT_DIR$/app/scripts/voting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/example.html" afterPath="$PROJECT_DIR$/app/example.html" />
     </list>
     <ignored path="trelloapiexamples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="example.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="91" selection-start="5414" selection-end="5414" vertical-scroll-proportion="-13.875">
+            <state line="152" column="56" selection-start="9294" selection-end="9294" vertical-scroll-proportion="0.7121535">
               <folding />
             </state>
           </provider>
@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voting.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="voting.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="49" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.56796116">
+            <state line="33" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -143,8 +143,8 @@
         <option value="$PROJECT_DIR$/app/scripts/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/errors.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/example.html" />
         <option value="$PROJECT_DIR$/app/scripts/voting.js" />
+        <option value="$PROJECT_DIR$/app/example.html" />
       </list>
     </option>
   </component>
@@ -507,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/example-main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="11" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/example-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="26" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
@@ -535,19 +528,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/example.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="91" selection-start="5414" selection-end="5414" vertical-scroll-proportion="-13.875">
+        <state line="33" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/example-main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="11" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
+    <entry file="file://$PROJECT_DIR$/app/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="49" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.56796116">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="152" column="56" selection-start="9294" selection-end="9294" vertical-scroll-proportion="0.7121535">
+          <folding />
         </state>
       </provider>
     </entry>
