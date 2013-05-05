@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bigger.html" afterPath="$PROJECT_DIR$/app/bigger.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/write.js" afterPath="$PROJECT_DIR$/app/scripts/write.js" />
     </list>
@@ -29,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="76" selection-start="8389" selection-end="8396" vertical-scroll-proportion="0.46827793">
+            <state line="172" column="112" selection-start="9321" selection-end="9321" vertical-scroll-proportion="0.70996976">
               <folding />
             </state>
           </provider>
@@ -107,7 +106,7 @@
       <file leaf-file-name="write.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/write.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="14" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+            <state line="25" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -541,14 +540,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/write.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+        <state line="25" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="76" selection-start="8389" selection-end="8396" vertical-scroll-proportion="0.46827793">
+        <state line="172" column="112" selection-start="9321" selection-end="9321" vertical-scroll-proportion="0.70996976">
           <folding />
         </state>
       </provider>

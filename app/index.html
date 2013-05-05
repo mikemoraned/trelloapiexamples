@@ -168,6 +168,12 @@
                                     </div>
                                     <div data-bind="with: selectedList, visible: selectedList">
                                         <div class="control-group">
+                                            <label class="control-label" for="w-card-name">Card name</label>
+                                            <div class="controls">
+                                                <input id="w-card-name" class="input" data-bind="value: cardName" />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
                                             <div class="controls">
                                                 <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
                                             </div>

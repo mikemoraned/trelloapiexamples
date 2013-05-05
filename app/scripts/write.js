@@ -2,15 +2,29 @@
 define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SCOPES) {
     'use strict';
 
-    function List(data) {
+    function List(data, errors) {
         var self = this;
+        self.id = data.id;
+
         self.name = ko.observable(data.name);
+
+        self.cardName = ko.observable();
+
         self.addCard = {
             "do" : function() {
-
+                Trello.post("cards", {
+                    name: self.cardName(),
+                    idList: self.id
+                },
+                function() {
+                    console.log("Posted card");
+                },
+                errors.onError);
             },
 
-            "can" : ko.observable(true)
+            "can" : ko.computed(function() {
+                return self.cardName() && self.cardName().length > 0;
+            })
         };
     }
 
@@ -27,17 +41,13 @@ define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SC
                 Trello.boards.get(this.id + "/lists",
                     function (results) {
                         results.forEach(function(result) {
-                            self.lists.push(new List(result));
+                            self.lists.push(new List(result, errors));
                         });
                     },
-                    function (error) {
-                        errors.onError(error);
-                    }
+                    errors.onError
                 );
             };
     }
-
-    var MAX_ROWS = 8;
 
     var Write = function(auth, errors) {
         var boards = ko.observableArray();
@@ -60,9 +70,7 @@ define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SC
                                 boards.push(new Board(result, errors));
                             });
                         },
-                        function (error) {
-                            errors.onError(error);
-                        }
+                        errors.onError
                     );
                 },
 
@@ -70,8 +78,6 @@ define(['ko', 'trello', 'statuses','scopes'], function (ko, Trello, STATUSES, SC
                     return auth.status() === STATUSES.LOGGED_IN;
                 })
             },
-
-
 
             boards: boards,
 
