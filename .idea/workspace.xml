@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lrw.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/example.html" afterPath="$PROJECT_DIR$/app/example.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="trelloapiexamples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="example.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/example.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="98" selection-start="1850" selection-end="1850" vertical-scroll-proportion="-9.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lrw.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lrw.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="26" selection-start="6564" selection-end="6564" vertical-scroll-proportion="1.8126888">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="114" selection-start="7026" selection-end="7026" vertical-scroll-proportion="-27.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/example.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="56" selection-start="9294" selection-end="9294" vertical-scroll-proportion="0.7121535">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+            <state line="57" column="51" selection-start="2738" selection-end="2738" vertical-scroll-proportion="-34.375">
               <folding />
             </state>
           </provider>
@@ -73,9 +76,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="33" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/statuses.js" />
         <option value="$PROJECT_DIR$/app/scripts/status.js" />
         <option value="$PROJECT_DIR$/app/scripts/error.js" />
@@ -142,9 +142,10 @@
         <option value="$PROJECT_DIR$/app/scripts/example-main.js" />
         <option value="$PROJECT_DIR$/app/scripts/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/errors.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/voting.js" />
+        <option value="$PROJECT_DIR$/app/lrw.html" />
         <option value="$PROJECT_DIR$/app/example.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -320,8 +321,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -336,8 +337,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/scripts" />
       <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -437,20 +438,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/vendor/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1513" column="22" selection-start="41632" selection-end="41641" vertical-scroll-proportion="-1.1015936">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/statuses.js">
@@ -481,16 +471,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component.json">
+    <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+        <state line="13" column="49" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -500,9 +483,16 @@
         <state line="28" column="46" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/example-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+        <state line="25" column="11" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -514,39 +504,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/auth.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/errors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+        <state line="12" column="28" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="114" selection-start="7026" selection-end="7026" vertical-scroll-proportion="-27.5">
+        <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/voting.js">
+    <entry file="file://$PROJECT_DIR$/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/example-main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="11" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="56" selection-start="9294" selection-end="9294" vertical-scroll-proportion="0.7121535">
+        <state line="40" column="98" selection-start="1850" selection-end="1850" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="51" selection-start="2738" selection-end="2738" vertical-scroll-proportion="-34.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lrw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="26" selection-start="6564" selection-end="6564" vertical-scroll-proportion="1.8126888">
           <folding />
         </state>
       </provider>

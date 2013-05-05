@@ -21,196 +21,44 @@
                 <div class="container">
                     <a class="brand" href="#">Trello Api</a>
                     <ul class="nav">
-                        <li class="active"><a href="#">Login/Read/Write</a></li>
+                        <li class="active"><a href="/">Introduction</a></li>
+                        <li><a href="lrw.html">Login/Read/Write</a></li>
                         <li><a href="example.html">Worked example</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div>
-                <div id="login">
-                    <div class="page-header">
-                        <h1>Login</h1>
-                    </div>
-                    <div class="row example">
-                        <div class="span12">
-                            <form class="form-horizontal" data-bind="with: auth">
-                                <div class="control-group">
-                                    <label class="control-label" for="status">Status</label>
-                                    <div class="controls">
-                                        <input id="status" class="input uneditable-input" data-bind="value: status" />
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="type">Type</label>
-                                    <div class="controls">
-                                        <select id="type" data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="scope">Scope</label>
-                                    <div class="controls">
-                                        <select id="scope" data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
-                                        <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span12">
-                            <h3>Watch out for</h3>
+            <div class="row">
+                <div class="span12">
+                    <h1>Farp</h1>
 
-                            <ul>
-                                <li>redirects are a pain because you lose app state, however pop-ups are hard to support across browsers</li>
-                                <li>for pop-ups success handler seems to get called too soon</li>
-                            </ul>
+                    <p>
+                        <strong>This</strong> is a small collection of examples of using the Trello Api to build mini-apps which extend and enhance Trello.
+                        <strong>You</strong> have some minimal experience of building a Javascript / HTML app, even if that's only copying and pasting an example.
+                        I encourage you to <a href="https://github.com/mikemoraned/trelloapiexamples">fork this app</a> and hack away.
 
-                            <ul class="pager">
-                                <li class="next">
-                                    <a href="#read">Next &rarr;</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </p>
+
+                    <p>
+                        However, before you do anything else:
+                        <ul>
+                            <li>read these: https://trello.com/docs/api/index.html
+                                https://trello.com/docs/index.html
+                                https://trello.com/api</li>
+                            <li>open your browsers' dev console. You'll get a lot more value that way.</li>
+                        </ul>
+                    </p>
                 </div>
-
-                <div id="read">
-                    <div class="page-header">
-                        <h1>Read</h1>
-                    </div>
-                    <div class="row example">
-                        <div class="span6">
-                            <form class="form-horizontal" data-bind="with: member">
-                                <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
-                                <table class="table" data-bind="visible: boards().length > 0">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Num members</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody data-bind="foreach: boards">
-                                        <tr>
-                                            <td data-bind="text: name"></td>
-                                            <td data-bind="text: members"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                        <div class="span6">
-                            <form class="form-horizontal" data-bind="with: member">
-                                <button class="btn" data-bind="click: fetchActions.do, enable: fetchActions.can">Fetch Actions</button>
-                                <table class="table" data-bind="visible: actions().length > 0">
-                                    <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>When</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody data-bind="foreach: actions">
-                                    <tr>
-                                        <td data-bind="text: name"></td>
-                                        <td data-bind="text: date"></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row watchout">
-                        <div class="span12">
-                            <h3>Watch out for</h3>
-
-                            <ul>
-                                <li>Data isn't always where you think e.g. comments are actually stored as actions</li>
-                                <li></li>
-                            </ul>
-
-                            <ul class="pager">
-                                <li class="next">
-                                    <a href="#write">Next &rarr;</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <ul class="pager">
+                        <li class="next">
+                            <a href="lrw.html#login">Next &rarr;</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="write">
-                    <div class="page-header">
-                        <h1>Write</h1>
-                    </div>
-
-                    <div class="row example">
-                        <div class="span6">
-                            <form class="form-horizontal" data-bind="with: write">
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="w-board">Board</label>
-                                    <div class="controls">
-                                        <select id="w-board" data-bind="options: boards, optionsText: 'name', value: selectedBoard"></select>
-                                    </div>
-                                </div>
-                                <div data-bind="with: selectedBoard, visible: selectedBoard">
-                                    <div class="control-group">
-                                        <label class="control-label" for="w-list">List</label>
-                                        <div class="controls">
-                                            <select id="w-list" data-bind="options: lists, optionsText: 'name', value: selectedList"></select>
-                                        </div>
-                                    </div>
-                                    <div data-bind="with: selectedList, visible: selectedList">
-                                        <div class="control-group">
-                                            <label class="control-label" for="w-card-name">Card name</label>
-                                            <div class="controls">
-                                                <input id="w-card-name" class="input" data-bind="value: cardName, valueUpdate: 'afterkeydown'" />
-                                            </div>
-                                        </div>
-                                        <div class="control-group">
-                                            <div class="controls">
-                                                <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="span6">
-                            <table class="table" data-bind="visible: errors.messages().length > 0">
-                                    <thead>
-                                    <tr>
-                                        <th>Message</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody data-bind="foreach: errors.messages">
-                                        <tr>
-                                            <td data-bind="text: $data"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                    <div class="row watchout">
-                        <div class="span12">
-                            <h3>Watch out for</h3>
-
-                            <ul>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
