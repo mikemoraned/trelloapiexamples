@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="983dc54b-80fe-4bcf-901b-e2b217e72d78" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/example.html" afterPath="$PROJECT_DIR$/app/example.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lrw.html" afterPath="$PROJECT_DIR$/app/lrw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
     </list>
     <ignored path="trelloapiexamples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="14" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-18.125">
+            <state line="49" column="27" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.5406797">
               <folding />
             </state>
           </provider>
@@ -39,16 +39,16 @@
       <file leaf-file-name="lrw.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lrw.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="78" selection-start="550" selection-end="550" vertical-scroll-proportion="-6.25">
+            <state line="33" column="29" selection-start="1413" selection-end="1696" vertical-scroll-proportion="-20.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="example.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="78" selection-start="586" selection-end="586" vertical-scroll-proportion="0.16992791">
+            <state line="29" column="55" selection-start="1039" selection-end="1424" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
@@ -143,9 +143,9 @@
         <option value="$PROJECT_DIR$/app/scripts/errors.js" />
         <option value="$PROJECT_DIR$/app/scripts/voting.js" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/lrw.html" />
         <option value="$PROJECT_DIR$/app/example.html" />
+        <option value="$PROJECT_DIR$/app/lrw.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -546,23 +546,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-18.125">
+        <state line="29" column="55" selection-start="1039" selection-end="1424" vertical-scroll-proportion="-18.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lrw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="78" selection-start="550" selection-end="550" vertical-scroll-proportion="-6.25">
+        <state line="33" column="29" selection-start="1413" selection-end="1696" vertical-scroll-proportion="-20.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/example.html">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="78" selection-start="586" selection-end="586" vertical-scroll-proportion="0.16992791">
+        <state line="49" column="27" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.5406797">
           <folding />
         </state>
       </provider>
