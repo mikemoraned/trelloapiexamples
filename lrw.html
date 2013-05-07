@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/ce2393e0.main.css">
+        <script src="scripts/vendor/0e15c528.modernizr.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+
+                    <a class="brand" href="/">Trello Api</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/">Introduction</a></li>
+                            <li class="active"><a href="lrw.html">Login/Read/Write</a></li>
+                            <li><a href="example.html">Worked example</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div id="login">
+                    <div class="page-header">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="row example">
+                        <div class="span12">
+                            <form class="form-horizontal" data-bind="with: auth">
+                                <div class="control-group">
+                                    <label class="control-label" for="status">Status</label>
+                                    <div class="controls">
+                                        <input id="status" class="input uneditable-input" data-bind="value: status">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="type">Type</label>
+                                    <div class="controls">
+                                        <select id="type" data-bind="options: login.opts.types, value: login.opts.type, enable: login.can"></select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="scope">Scope</label>
+                                    <div class="controls">
+                                        <select id="scope" data-bind="options: login.opts.scopes, optionsText: 'name', value: login.opts.scope, enable: login.can"></select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button class="btn" data-bind="click: login.do, enable: login.can">Log in</button>
+                                        <button class="btn" data-bind="click: logout.do, enable: logout.can">Log out</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li>redirects are a pain because you lose app state, however pop-ups are hard to support across browsers</li>
+                                <li>currently, if you use a pop-up, the success handler defined in <a href="https://trello.com/1/client.coffee">client.coffee</a> seems to get called far too soon</li>
+                            </ul>
+
+                            <ul class="pager">
+                                <li class="next">
+                                    <a href="#read">Next &rarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="read">
+                    <div class="page-header">
+                        <h1>Read</h1>
+                    </div>
+                    <div class="row example">
+                        <div class="span6">
+                            <form class="form-horizontal" data-bind="with: member">
+                                <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
+                                <table class="table" data-bind="visible: boards().length > 0">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Num members</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: boards">
+                                        <tr>
+                                            <td data-bind="text: name"></td>
+                                            <td data-bind="text: members"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="span6">
+                            <form class="form-horizontal" data-bind="with: member">
+                                <button class="btn" data-bind="click: fetchActions.do, enable: fetchActions.can">Fetch Actions</button>
+                                <table class="table" data-bind="visible: actions().length > 0">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>When</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: actions">
+                                    <tr>
+                                        <td data-bind="text: name"></td>
+                                        <td data-bind="text: date"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row watchout">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li>Data isn't always where you think e.g. comments are actually stored as actions</li>
+                            </ul>
+
+                            <ul class="pager">
+                                <li class="next">
+                                    <a href="#write">Next &rarr;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="write">
+                    <div class="page-header">
+                        <h1>Write</h1>
+                    </div>
+
+                    <div class="row example">
+                        <div class="span6">
+                            <form class="form-horizontal" data-bind="with: write">
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button class="btn" data-bind="click: fetchBoards.do, enable: fetchBoards.can">Fetch Boards</button>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="w-board">Board</label>
+                                    <div class="controls">
+                                        <select id="w-board" data-bind="options: boards, optionsText: 'name', value: selectedBoard"></select>
+                                    </div>
+                                </div>
+                                <div data-bind="with: selectedBoard, visible: selectedBoard">
+                                    <div class="control-group">
+                                        <label class="control-label" for="w-list">List</label>
+                                        <div class="controls">
+                                            <select id="w-list" data-bind="options: lists, optionsText: 'name', value: selectedList"></select>
+                                        </div>
+                                    </div>
+                                    <div data-bind="with: selectedList, visible: selectedList">
+                                        <div class="control-group">
+                                            <label class="control-label" for="w-card-name">Card name</label>
+                                            <div class="controls">
+                                                <input id="w-card-name" class="input" data-bind="value: cardName, valueUpdate: 'afterkeydown'">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                <button class="btn" data-bind="click: addCard.do, enable: addCard.can">Add Card</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="span6">
+                            <table class="table" data-bind="visible: errors.messages().length > 0">
+                                    <thead>
+                                    <tr>
+                                        <th>Message</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: errors.messages">
+                                        <tr>
+                                            <td data-bind="text: $data"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            
+                        </div>
+                    <div class="row watchout">
+                        <div class="span12">
+                            <h3>Watch out for</h3>
+
+                            <ul>
+                                <li>You can't, as far as I can see, tell what current level of scope you are at.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <script data-main="scripts/883429af.main" src="components/requirejs/require.js"></script>
+</div></body>
+</html>
